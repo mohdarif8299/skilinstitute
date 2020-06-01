@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:background="#778899"
+android:alpha="0.7"
+android:id="@+id/vcover"
+android:layout_centerVertical="true"
+android:visibility="visible">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:textColor="#fff"
+    android:id="@+id/lockv"
+    android:src="@drawable/lockicon"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Complete the payment to unlock more videos"
+    android:layout_below="@+id/lockv"
+    android:textColor="#fff"
+    android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+
+</RelativeLayout>
