@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SkilClasses</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="fragment_a">Home</string>
+    <string name="fragment_b">Assignment</string>
+    <string name="fragment_c">Quiz</string>
+    <string name="fragment_d">Doubts</string>
+    <string-array name="classtype">
+        <item>Select Your Class</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+</resources>

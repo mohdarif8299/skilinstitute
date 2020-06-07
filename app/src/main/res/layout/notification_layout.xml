@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#f0f0f0"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="5dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Skill Classes"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/classandcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Class 12, Crash Course"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginRight="10dp"
+                android:text="2 Days ago"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top"
+                android:src="@drawable/time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is amazing. No real dividers between list items or even buttons but yet the layout and spacing make everything feel distinct."
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#666666"
+                android:textFontWeight="900"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

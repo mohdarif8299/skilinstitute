@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/my_content"
+        android:icon="@drawable/assignmentpdf"
+        android:title="My Assignments"></item>
+
+    <item
+        android:id="@+id/mycourse"
+        android:icon="@drawable/assignment"
+        android:title="My Course"></item>
+
+    <item
+        android:id="@+id/Test_Item"
+        android:icon="@drawable/my_content"
+        android:title="Test Series"></item>
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/notification"
+        android:title="Notifications"></item>
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/share"
+        android:title="Share with Friends"></item>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout"></item>
+</menu>

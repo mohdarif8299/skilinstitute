@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/single_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#fff"
+            android:elevation="5dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:src="@drawable/assignemnt_logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="65dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/subcategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Sub-Category"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/classname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="ClassName"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/duedateassignment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="due date : 10-5-2019"
+                    android:textColor="#000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/viewassignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:text="View Assignment"
+                android:textColor="@color/defaultcolor"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/single_row"
+        android:background="#666666" />
+
+
+</RelativeLayout>

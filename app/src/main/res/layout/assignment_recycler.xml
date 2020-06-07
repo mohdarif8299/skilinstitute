@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/as_recycle"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:layout_weight="1"
+    android:background="@drawable/home_gradient"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/assignmentupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/uploadassignment"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:text="Upload Assignment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/white"
+            android:visibility="visible"></TextView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/home_gradient">
+
+        <LinearLayout
+            android:id="@+id/open_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/home_gradient"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/assignmentpdf"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/submit_assignment"></ImageView>
+
+            <TextView
+                android:id="@+id/aname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/assignmentpdf"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Name of the Course"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aofclass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aname"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/assignmentpdf"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/white"
+                android:visibility="visible" />
+
+            <!-- <TextView
+                 android:id="@+id/adate"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="9th class |"
+                 android:layout_toRightOf="@+id/aofclass"
+                 android:layout_marginTop="8dp"
+                 />-->
+            <!--        <TextView
+                        android:id="@+id/adesp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Describe the following into words"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/aofclass"/>
+
+                    <TextView
+                        android:id="@+id/asub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/adate"/>
+                    <TextView
+                        android:id="@+id/apath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/asub"/>-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

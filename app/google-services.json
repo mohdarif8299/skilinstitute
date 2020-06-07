@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "15778215397",
+    "firebase_url": "https://skilinstitute.firebaseio.com",
+    "project_id": "skilinstitute",
+    "storage_bucket": "skilinstitute.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15778215397:android:508518141cf8eb8b202b0c",
+        "android_client_info": {
+          "package_name": "com.learning.skilclasses"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15778215397-44lr4iec72padj3f66bislseghnnn754.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.learning.skilclasses",
+            "certificate_hash": "88cb1b71bad2f9571d7358893b33471cf41a1ba7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl1CLXFKvnJPubL3PGECIkTC8Lcjk9bIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15778215397-9v5sn4dohns18qbcfj6mtrjsh3aoir5a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

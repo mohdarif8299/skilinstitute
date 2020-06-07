@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/home_gradient">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:background="@drawable/home_gradient"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/chatlayout"
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"
+                    android:background="#000"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/videoplayerimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/video_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+
+                        android:text="Introduction To Real Numbersas"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/white"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/video_subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:ellipsize="end"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:text="Maths"
+                        android:textAlignment="textStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/white"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="@+id/header"
+        android:gravity="center"
+        android:background="#778899"
+        android:alpha="0.7"
+        android:id="@+id/vcover"
+        android:layout_centerVertical="true"
+        android:visibility="visible">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="#fff"
+        android:id="@+id/lockv"
+        android:src="@drawable/lockicon"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete the payment to unlock more videos"
+            android:layout_below="@+id/lockv"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@drawable/home_gradient">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:background="@drawable/home_gradient"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/chatlayout"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:background="#000"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/videoplayerimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/video_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Introduction To Real Numbers"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/video_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="Maths"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+-->
